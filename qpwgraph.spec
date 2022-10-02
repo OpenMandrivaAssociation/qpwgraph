@@ -10,6 +10,9 @@ Source0:        https://gitlab.freedesktop.org/rncbc/qpwgraph/-/archive/v%{versi
 
 BuildRequires:  appstream-util
 BuildRequires:  cmake
+BuildRequires:	cmake(qt6)
+BuildRequires:	qmake-qt6
+BuildRequires:	qt6-qttools
 BuildRequires:  cmake(Qt6Core)
 BuildRequires:  cmake(Qt6Gui)
 BuildRequires:  cmake(Qt6Widgets)
