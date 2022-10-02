@@ -14,6 +14,7 @@ BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
 BuildRequires:	qt6-qttools
 BuildRequires:  cmake(Qt6Core)
+BuildRequires:  cmake(Qt6DBus)
 BuildRequires:  cmake(Qt6Gui)
 BuildRequires:  cmake(Qt6Widgets)
 BuildRequires:  cmake(Qt6Xml)
@@ -21,6 +22,9 @@ BuildRequires:  cmake(Qt6Network)
 BuildRequires:  cmake(Qt6Svg)
 BuildRequires:  pkgconfig(libpipewire-0.3)
 BuildRequires:  pkgconfig(alsa)
+BuildRequires:  pkgconfig(xkbcommon-x11)
+BuildRequires:  pkgconfig(xkbcommon)
+BuildRequires:  vulkan-headers
 
 Requires:       hicolor-icon-theme
 Requires:       shared-mime-info
