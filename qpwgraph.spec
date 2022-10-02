@@ -25,7 +25,7 @@ BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(xkbcommon-x11)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  vulkan-headers
-
+Requires:       pipewire
 Requires:       hicolor-icon-theme
 Requires:       shared-mime-info
 
