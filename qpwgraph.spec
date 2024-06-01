@@ -1,7 +1,7 @@
 %global provider org.rncbc.qpwgraph
 
 Name:           qpwgraph
-Version:        0.7.1
+Version:        0.7.2
 Release:        1
 Summary:        PipeWire Graph Qt GUI Interface
 License:        GPLv2+
@@ -28,23 +28,12 @@ BuildRequires:  vulkan-headers
 Requires:       pipewire
 Requires:       hicolor-icon-theme
 Requires:       shared-mime-info
+BuildSystem:	cmake
+BuildOption:	-DCONFIG_ALSA_MIDI=ON
 
 %description
 qpwgraph is a graph manager dedicated to PipeWire, using the Qt C++ framework,
 based and pretty much like the same of QjackCtl.
-
-%prep
-%autosetup -n %{name}-v%{version} -p1
-
-%build
-%cmake \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DCONFIG_ALSA_MIDI=ON
-%make_build
-
-%install
-%make_install -C build
-
 
 %files
 %license LICENSE.md
