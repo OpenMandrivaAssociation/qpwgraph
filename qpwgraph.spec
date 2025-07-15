@@ -1,7 +1,7 @@
 %global provider org.rncbc.qpwgraph
 
 Name:           qpwgraph
-Version:        0.9.1
+Version:        0.9.4
 Release:        1
 Summary:        PipeWire Graph Qt GUI Interface
 License:        GPLv2+
